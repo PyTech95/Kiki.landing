@@ -62,8 +62,9 @@
         -moz-osx-font-smoothing: grayscale;
     }
     h1, h2, h3, h4, h5, h6, .font-display {
-        font-family: 'Cabinet Grotesk', 'Manrope', system-ui, sans-serif;
-        letter-spacing: -0.02em;
+        font-family: 'Bricolage Grotesque', 'Cabinet Grotesk', 'Manrope', system-ui, sans-serif;
+        letter-spacing: -0.035em;
+        font-variation-settings: "opsz" 96;
     }
     ::selection {
         background: hsl(var(--kiki-yellow));
@@ -83,7 +84,8 @@ a[id="emergent-badge"] {
 
 @layer utilities {
     .font-display {
-        font-family: 'Cabinet Grotesk', 'Manrope', system-ui, sans-serif;
+        font-family: 'Bricolage Grotesque', 'Cabinet Grotesk', 'Manrope', system-ui, sans-serif;
+        font-variation-settings: "opsz" 96;
     }
     .font-body {
         font-family: 'IBM Plex Sans', system-ui, sans-serif;
