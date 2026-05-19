@@ -1,0 +1,106 @@
+{
+  "theme": "light",
+  "archetype": "Archetype 4 (Swiss & High-Contrast)",
+  "domain_context": "Technical Education & Industrial Training",
+  "mood": "Trustworthy, Precision-driven, Authoritative, Modern",
+  "colors": {
+    "base": {
+      "background": "#FFFFFF",
+      "surface": "#F8FAFC",
+      "surface_alt": "#F1F5F9"
+    },
+    "brand": {
+      "primary": "#0F172A",
+      "primary_hover": "#1E293B",
+      "accent": "#FACC15",
+      "accent_hover": "#EAB308",
+      "industrial_blue": "#0369A1",
+      "success": "#16A34A"
+    },
+    "text": {
+      "primary": "#020617",
+      "secondary": "#334155",
+      "inverse": "#FFFFFF",
+      "accent": "#854D0E"
+    },
+    "border": {
+      "default": "#E2E8F0",
+      "focus": "#0F172A"
+    }
+  },
+  "typography": {
+    "heading_font": "Cabinet Grotesk",
+    "body_font": "IBM Plex Sans",
+    "rules": {
+      "h1": "text-5xl sm:text-6xl font-black tracking-tighter text-primary",
+      "h2": "text-3xl sm:text-4xl font-bold tracking-tight text-primary",
+      "h3": "text-xl sm:text-2xl font-bold tracking-tight",
+      "body": "text-base sm:text-lg leading-relaxed text-secondary",
+      "overline": "text-xs font-bold uppercase tracking-[0.2em] text-industrial_blue"
+    }
+  },
+  "spacing_and_layout": {
+    "philosophy": "Generous spacing. p-8 to p-16. Use strict grid hierarchy.",
+    "hero": "Asymmetrical layout. Large typography on left, high-quality industrial imagery on right. Maximum CTA visibility.",
+    "benefits_section": "Bento Grid strategy ('Control Room' style). Tight gaps (gap-4 or gap-6) with 1px solid borders.",
+    "courses_grid": "3-column grid for the German-certified courses.",
+    "borders_and_radius": "Sharp or minimal radius. rounded-none or rounded-sm (max 4px). Heavy reliance on 1px borders (#E2E8F0) for structure."
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-accent text-primary font-bold hover:bg-accent_hover transition-colors rounded-none px-8 py-4 shadow-sm",
+      "secondary": "bg-primary text-inverse font-semibold hover:bg-primary_hover transition-colors rounded-none px-8 py-4",
+      "outline": "border-2 border-primary text-primary hover:bg-surface font-semibold rounded-none"
+    },
+    "forms": {
+      "strategy": "Shadcn components heavily customized. Flat, 1px border, square edges. Focus state should use a sharp ring-2 ring-primary.",
+      "multi_step": "Show progress indicator (Step 1 of 3) clearly. Use robust validation."
+    },
+    "cards": {
+      "style": "Flat backgrounds (white or slate-50). 1px border (border-border). No default shadow. Hover: subtle shadow-md and -translate-y-1."
+    },
+    "floating_elements": {
+      "whatsapp": "Fixed at bottom-4 right-4. z-50. Do not use generic purple/teal. Use standard WhatsApp Green (#25D366) or brand industrial blue.",
+      "ai_assistant": "Fixed at bottom-4 left-4. z-50. Minimalist dark toggle button."
+    }
+  },
+  "images": {
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1666634157070-6fd830fb5672?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwxfHxjbmMlMjBtYWNoaW5lJTIwbWFudWZhY3R1cmluZyUyMHByZWNpc2lvbnxlbnwwfHx8fDE3NzkxODM5MzB8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Precision CNC Manufacturing"
+    },
+    "students": {
+      "url": "https://images.pexels.com/photos/16504588/pexels-photo-16504588.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "alt": "Indian student studying"
+    },
+    "workshop": {
+      "url": "https://images.unsplash.com/photo-1717386255773-1e3037c81788?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NjZ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBlbmdpbmVlcmluZyUyMHdvcmtzaG9wJTIwdG9vbHMlMjBtYWNoaW5lcnl8ZW58MHx8fHwxNzc5MTgzOTMwfDA&ixlib=rb-4.1.0&q=85",
+      "alt": "Modern engineering workshop tools machinery"
+    },
+    "logos": [
+      {
+        "name": "Honda",
+        "url": "https://images.unsplash.com/photo-1519429893275-fa1eb00397e9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHwxfHxIb25kYSUyMExvZ298ZW58MHx8fHwxNzc5MTgzOTQ1fDA&ixlib=rb-4.1.0&q=85"
+      },
+      {
+        "name": "Suzuki",
+        "url": "https://images.unsplash.com/photo-1620288627223-53302f4e8c74?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzZ8MHwxfHNlYXJjaHwxfHxTdXp1a2klMjBMb2dvfGVufDB8fHx8MTc3OTE4Mzk0NXww&ixlib=rb-4.1.0&q=85"
+      },
+      {
+        "name": "Mitsubishi / Partner",
+        "url": "https://images.pexels.com/photos/5027485/pexels-photo-5027485.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      }
+    ]
+  },
+  "specific_instructions_to_agent": [
+    "Strictly avoid Inter or Space Grotesk fonts. Use Cabinet Grotesk for headings and IBM Plex Sans for body.",
+    "Do NOT use purple gradients or soft pastel themes. Stick to the stark, industrial 'Swiss & High-Contrast' palette provided.",
+    "Build a robust, multi-step Admission Application Form (Shadcn customized).",
+    "Integrate a floating WhatsApp button at the bottom-right and an AI chatbot at the bottom-left.",
+    "Include strong 'Admissions Open 2025' badges and maximum CTAs.",
+    "Highlight the 'Earn While You Learn' stipend benefit prominently.",
+    "Ensure 'data-testid' is added to all buttons, inputs, and interactive elements.",
+    "Make the UI strictly mobile-first with 100% responsiveness.",
+    "Avoid centering everything. Use asymmetrical layouts with strong left alignments to create visual tension."
+  ]
+}
