@@ -3,14 +3,14 @@ import { ArrowUpRight, Clock, GraduationCap } from "lucide-react";
 
 export default function CoursesSection() {
   return (
-    <section id="courses" data-testid="courses-section" className="py-20 sm:py-28 bg-white">
+    <section id="courses" data-testid="courses-section" className="py-16 sm:py-24 lg:py-28 bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-12">
           <div>
             <div className="text-xs font-bold uppercase tracking-[0.2em] text-sky-700">
               Long Term Courses · 3.5 Years
             </div>
-            <h2 className="font-display mt-3 text-4xl sm:text-5xl lg:text-6xl font-black tracking-tighter text-slate-950 leading-[0.95] text-balance">
+            <h2 className="font-display mt-3 text-3xl sm:text-5xl lg:text-6xl font-black tracking-tighter text-slate-950 leading-[1.02] sm:leading-[0.95] text-balance">
               Three German-certified
               <br />
               paths to your career.

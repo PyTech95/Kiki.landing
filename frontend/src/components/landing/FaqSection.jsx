@@ -8,13 +8,13 @@ import {
 
 export default function FaqSection() {
   return (
-    <section id="faq" data-testid="faq-section" className="py-20 sm:py-28 bg-slate-50 border-y border-slate-200">
+    <section id="faq" data-testid="faq-section" className="py-16 sm:py-24 lg:py-28 bg-slate-50 border-y border-slate-200">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-10">
         <div className="text-center">
           <div className="text-xs font-bold uppercase tracking-[0.2em] text-sky-700">
             Frequently Asked
           </div>
-          <h2 className="font-display mt-3 text-4xl sm:text-5xl font-black tracking-tighter text-slate-950 leading-[0.95]">
+          <h2 className="font-display mt-3 text-3xl sm:text-5xl font-black tracking-tighter text-slate-950 leading-[1.02] sm:leading-[0.95]">
             Questions, answered.
           </h2>
           <p className="mt-4 text-slate-600">

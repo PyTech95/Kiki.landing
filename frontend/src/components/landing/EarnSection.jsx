@@ -25,7 +25,7 @@ const POINTS = [
 
 export default function EarnSection() {
   return (
-    <section id="earn" data-testid="earn-section" className="py-20 sm:py-28 bg-yellow-400 relative overflow-hidden grain">
+    <section id="earn" data-testid="earn-section" className="py-16 sm:py-24 lg:py-28 bg-yellow-400 relative overflow-hidden grain">
       <div className="absolute -top-24 -right-24 h-72 w-72 bg-slate-950/10 rounded-full blur-3xl" />
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
         <div className="grid lg:grid-cols-12 gap-10 items-start">
@@ -33,13 +33,13 @@ export default function EarnSection() {
             <div className="text-xs font-bold uppercase tracking-[0.2em] text-slate-900/70">
               The Kiki Advantage
             </div>
-            <h2 className="font-display mt-3 text-4xl sm:text-5xl lg:text-6xl font-black tracking-tighter text-slate-950 leading-[0.95]">
+            <h2 className="font-display mt-3 text-3xl sm:text-5xl lg:text-6xl font-black tracking-tighter text-slate-950 leading-[1.02] sm:leading-[0.95]">
               First time in India.{" "}
-              <span className="block underline decoration-slate-950 decoration-[6px] underline-offset-4">
+              <span className="block underline decoration-slate-950 decoration-[4px] sm:decoration-[6px] underline-offset-4">
                 Earn while you learn.
               </span>
             </h2>
-            <p className="mt-5 text-base sm:text-lg text-slate-900/80 leading-relaxed max-w-md">
+            <p className="mt-4 sm:mt-5 text-base sm:text-lg text-slate-900/80 leading-relaxed max-w-md">
               Modelled after Germany's famous "Berufsschule" dual-training system —
               one of the most successful in the world. Students don't just learn
               skills, they earn money while building a real career.
@@ -47,7 +47,7 @@ export default function EarnSection() {
             <a
               href="#apply"
               data-testid="earn-cta-button"
-              className="mt-8 inline-flex items-center gap-2 bg-slate-950 text-white px-7 h-13 py-4 font-bold uppercase tracking-wider hover:bg-slate-800 transition-colors group"
+              className="mt-7 sm:mt-8 inline-flex items-center gap-2 bg-slate-950 text-white px-6 sm:px-7 h-12 sm:h-13 py-3 sm:py-4 font-bold uppercase tracking-wider text-sm sm:text-base hover:bg-slate-800 transition-colors group"
             >
               Reserve My Seat
               <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />

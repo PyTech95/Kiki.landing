@@ -3,7 +3,7 @@ import { KIKI } from "@/data/kiki";
 
 export default function Hero() {
   return (
-    <section id="top" data-testid="hero-section" className="relative pt-24 sm:pt-28 lg:pt-32 pb-12 lg:pb-20 overflow-hidden">
+    <section id="top" data-testid="hero-section" className="relative pt-20 sm:pt-28 lg:pt-32 pb-14 lg:pb-20 overflow-hidden">
       <div className="absolute inset-0 grid-noise opacity-60 pointer-events-none" />
       <div className="absolute top-32 -right-20 h-72 w-72 bg-yellow-400/20 blur-3xl rounded-full pointer-events-none" />
 
@@ -22,7 +22,7 @@ export default function Hero() {
 
           <h1
             data-testid="hero-headline"
-            className="font-display mt-6 text-4xl sm:text-6xl lg:text-7xl font-black tracking-tighter text-slate-950 leading-[0.95] text-balance"
+            className="font-display mt-5 sm:mt-6 text-[2.25rem] leading-[1.02] sm:text-6xl lg:text-7xl font-black tracking-tighter text-slate-950 sm:leading-[0.95] text-balance"
           >
             Build the skills{" "}
             <span className="relative inline-block">
@@ -81,7 +81,7 @@ export default function Hero() {
         <div className="lg:col-span-5 relative reveal-up" style={{ animationDelay: "120ms" }}>
           <div className="relative">
             {/* Image card */}
-            <div className="relative aspect-[4/5] overflow-hidden bg-slate-100 border border-slate-900">
+            <div className="relative aspect-[4/3] sm:aspect-[4/5] overflow-hidden bg-slate-100 border border-slate-900">
               <img
                 src="https://images.unsplash.com/photo-1666634157070-6fd830fb5672?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwxfHxjbmMlMjBtYWNoaW5lJTIwbWFudWZhY3R1cmluZyUyMHByZWNpc2lvbnxlbnwwfHx8fDE3NzkxODM5MzB8MA&ixlib=rb-4.1.0&q=85"
                 alt="Precision CNC manufacturing training"

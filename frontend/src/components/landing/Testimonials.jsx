@@ -3,13 +3,13 @@ import { Quote, Star } from "lucide-react";
 
 export default function Testimonials() {
   return (
-    <section data-testid="testimonials-section" className="py-20 sm:py-28 bg-white">
+    <section data-testid="testimonials-section" className="py-16 sm:py-24 lg:py-28 bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
         <div className="max-w-3xl">
           <div className="text-xs font-bold uppercase tracking-[0.2em] text-sky-700">
             Student Speak
           </div>
-          <h2 className="font-display mt-3 text-4xl sm:text-5xl font-black tracking-tighter text-slate-950 leading-[0.95]">
+          <h2 className="font-display mt-3 text-3xl sm:text-5xl font-black tracking-tighter text-slate-950 leading-[1.02] sm:leading-[0.95]">
             Real students. Real careers.
           </h2>
         </div>

@@ -30,12 +30,12 @@ export default function Navbar() {
           : "bg-white/70 backdrop-blur-sm border-b border-transparent"
       }`}
     >
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 h-16 sm:h-20 flex items-center justify-between gap-4">
-        <a href="#top" data-testid="navbar-logo" className="flex items-center gap-2.5 group">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 h-14 sm:h-20 flex items-center justify-between gap-2 sm:gap-4">
+        <a href="#top" data-testid="navbar-logo" className="flex items-center gap-2.5 group flex-shrink-0">
           <img
             src="https://customer-assets.emergentagent.com/job_join-kiki/artifacts/4h36vc80_image.png"
             alt="Kiki Centre for Technology"
-            className="h-11 sm:h-12 w-auto object-contain"
+            className="h-9 sm:h-12 w-auto object-contain"
           />
         </a>
 
@@ -64,7 +64,7 @@ export default function Navbar() {
           <a
             href="#apply"
             data-testid="navbar-apply-button"
-            className="btn-yellow inline-flex items-center px-4 sm:px-5 h-10 sm:h-11 text-sm font-bold uppercase tracking-wider"
+            className="btn-yellow inline-flex items-center px-3 sm:px-5 h-9 sm:h-11 text-xs sm:text-sm font-bold uppercase tracking-wider"
           >
             Apply Now
           </a>
@@ -72,9 +72,9 @@ export default function Navbar() {
             aria-label="Toggle menu"
             data-testid="navbar-mobile-toggle"
             onClick={() => setOpen((v) => !v)}
-            className="lg:hidden h-10 w-10 grid place-items-center border border-slate-300"
+            className="lg:hidden h-9 w-9 sm:h-10 sm:w-10 grid place-items-center border border-slate-300"
           >
-            {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            {open ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
           </button>
         </div>
       </div>

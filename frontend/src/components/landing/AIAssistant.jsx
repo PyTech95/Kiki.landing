@@ -77,11 +77,11 @@ export default function AIAssistant() {
         aria-label="Open Kiki AI Assistant"
         data-testid="ai-toggle-button"
         onClick={() => setOpen((v) => !v)}
-        className="fixed bottom-20 left-4 sm:bottom-6 sm:left-6 z-40 group"
+        className="fixed bottom-20 left-3 sm:bottom-6 sm:left-6 z-40 group"
       >
         <div className="flex items-center gap-3">
-          <div className="relative h-14 w-14 sm:h-16 sm:w-16 rounded-full bg-slate-950 text-white grid place-items-center shadow-2xl hover:scale-105 transition-transform">
-            <Sparkles className="h-6 w-6 sm:h-7 sm:w-7 text-yellow-400" />
+          <div className="relative h-12 w-12 sm:h-16 sm:w-16 rounded-full bg-slate-950 text-white grid place-items-center shadow-2xl hover:scale-105 transition-transform">
+            <Sparkles className="h-5 w-5 sm:h-7 sm:w-7 text-yellow-400" />
             <span className="absolute -top-1 -right-1 h-3 w-3 rounded-full bg-yellow-400 animate-ping" />
             <span className="absolute -top-1 -right-1 h-3 w-3 rounded-full bg-yellow-400" />
           </div>

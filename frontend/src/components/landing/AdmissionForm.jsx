@@ -109,7 +109,7 @@ export default function AdmissionForm() {
   const progressPct = done ? 100 : ((step - 1) / 3) * 100 + 16;
 
   return (
-    <section id="apply" data-testid="admission-form-section" className="py-20 sm:py-28 bg-slate-950 text-white relative overflow-hidden">
+    <section id="apply" data-testid="admission-form-section" className="py-16 sm:py-24 lg:py-28 bg-slate-950 text-white relative overflow-hidden">
       <div className="absolute inset-0 grid-noise opacity-[0.07] pointer-events-none" />
       <div className="absolute -top-20 -left-20 h-72 w-72 bg-yellow-400/10 blur-3xl rounded-full" />
 
