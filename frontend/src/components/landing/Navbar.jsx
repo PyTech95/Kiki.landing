@@ -32,17 +32,11 @@ export default function Navbar() {
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 h-16 sm:h-20 flex items-center justify-between gap-4">
         <a href="#top" data-testid="navbar-logo" className="flex items-center gap-2.5 group">
-          <div className="h-9 w-9 sm:h-10 sm:w-10 bg-slate-900 grid place-items-center">
-            <span className="text-yellow-400 font-display font-black text-lg leading-none">K</span>
-          </div>
-          <div className="leading-tight">
-            <div className="font-display font-black text-slate-900 text-base sm:text-lg tracking-tight">
-              KIKI CENTRE
-            </div>
-            <div className="text-[10px] sm:text-xs text-slate-500 uppercase tracking-[0.18em]">
-              For Technology
-            </div>
-          </div>
+          <img
+            src="https://customer-assets.emergentagent.com/job_join-kiki/artifacts/4h36vc80_image.png"
+            alt="Kiki Centre for Technology"
+            className="h-11 sm:h-12 w-auto object-contain"
+          />
         </a>
 
         <nav className="hidden lg:flex items-center gap-7">

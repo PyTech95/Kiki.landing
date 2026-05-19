@@ -7,17 +7,11 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 py-16 grid lg:grid-cols-12 gap-10">
         <div className="lg:col-span-5">
           <div className="flex items-center gap-3">
-            <div className="h-10 w-10 bg-yellow-400 grid place-items-center">
-              <span className="text-slate-950 font-display font-black text-lg">K</span>
-            </div>
-            <div>
-              <div className="font-display font-black text-white text-lg">
-                KIKI CENTRE
-              </div>
-              <div className="text-[10px] uppercase tracking-[0.2em] text-slate-400">
-                For Technology
-              </div>
-            </div>
+            <img
+              src="https://customer-assets.emergentagent.com/job_join-kiki/artifacts/4h36vc80_image.png"
+              alt="Kiki Centre for Technology"
+              className="h-14 w-auto object-contain"
+            />
           </div>
           <p className="mt-5 text-sm text-slate-400 leading-relaxed max-w-sm">
             {KIKI.tagline}. In association with {KIKI.partner}.
