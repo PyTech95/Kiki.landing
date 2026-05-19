@@ -14,6 +14,7 @@ import Footer from "@/components/landing/Footer";
 import StickyMobileCTA from "@/components/landing/StickyMobileCTA";
 import WhatsAppButton from "@/components/landing/WhatsAppButton";
 import AIAssistant from "@/components/landing/AIAssistant";
+import EnquiryPopup from "@/components/landing/EnquiryPopup";
 
 export default function Landing() {
   useEffect(() => {
@@ -47,6 +48,7 @@ export default function Landing() {
       <StickyMobileCTA />
       <WhatsAppButton />
       <AIAssistant />
+      <EnquiryPopup />
     </main>
   );
 }
