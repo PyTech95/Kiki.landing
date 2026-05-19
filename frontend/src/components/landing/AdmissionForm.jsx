@@ -117,7 +117,7 @@ export default function AdmissionForm() {
         {/* Left — context */}
         <div className="lg:col-span-5">
           <div className="text-xs font-bold uppercase tracking-[0.2em] text-yellow-400">
-            Admissions Open · 2025
+            Admissions Open · 2026
           </div>
           <h2 className="font-display mt-3 text-4xl sm:text-5xl lg:text-6xl font-black tracking-tighter leading-[0.95] text-balance">
             One form. <br />

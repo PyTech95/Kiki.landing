@@ -16,7 +16,7 @@ export default function Hero() {
               <span className="relative inline-flex rounded-full h-2 w-2 bg-slate-900"></span>
             </span>
             <span className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.18em]">
-              Admissions Open · Batch 2025
+              Admissions Open · Batch 2026
             </span>
           </div>
 

@@ -5,7 +5,7 @@ import { KIKI } from "@/data/kiki";
 export default function WhatsAppButton() {
   const [hover, setHover] = useState(false);
   const message = encodeURIComponent(
-    "Hi Kiki Centre! I'd like to know more about admissions 2025."
+    "Hi Kiki Centre! I'd like to know more about admissions 2026."
   );
   const href = `https://wa.me/${KIKI.whatsapp}?text=${message}`;
 

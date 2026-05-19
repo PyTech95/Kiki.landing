@@ -166,7 +166,7 @@ export default function EnquiryPopup() {
             </h2>
             <p className="mt-2 text-sm text-slate-900/80">
               Get scholarship details, course-fit advice and batch dates for{" "}
-              <strong>2025 Admissions</strong>.
+              <strong>2026 Admissions</strong>.
             </p>
           </div>
         </div>

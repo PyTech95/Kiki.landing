@@ -128,7 +128,7 @@ SYSTEM_PROMPT = """You are Kiki AI, the friendly admission assistant for Kiki Ce
 ABOUT KIKI CENTRE:
 - 55,000 sq ft state-of-the-art training centre with German-designed curriculum
 - "We make the people who will make in India"
-- Admissions Open for 2025
+- Admissions Open for 2026
 
 LONG TERM COURSES (3.5 years, German-certified diploma):
 1. Tool & Die Making (Manufacturing & Designing) — Mechanical stream
