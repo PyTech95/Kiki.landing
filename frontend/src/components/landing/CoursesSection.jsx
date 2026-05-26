@@ -27,7 +27,7 @@ export default function CoursesSection() {
             <article
               key={c.id}
               data-testid={`course-card-${c.id}`}
-              className="group border border-slate-900 bg-white flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+              className="group border border-slate-900 bg-white flex flex-col card-lift hover:border-slate-950"
             >
               <div className="relative aspect-[4/3] overflow-hidden bg-slate-100 border-b border-slate-900">
                 <img

@@ -60,7 +60,7 @@ export default function EarnSection() {
               return (
                 <div
                   key={p.title}
-                  className="bg-white border border-slate-950 p-6 hover:-translate-y-1 transition-transform"
+                  className="bg-white border-2 border-slate-950 p-6 card-lift"
                 >
                   <div className="flex items-center justify-between mb-4">
                     <Icon className="h-7 w-7 text-slate-950" />

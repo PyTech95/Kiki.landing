@@ -18,7 +18,7 @@ export default function CtaBand() {
           <a
             href="#apply"
             data-testid="cta-band-apply"
-            className="bg-slate-950 text-white inline-flex items-center justify-center gap-2 px-6 sm:px-7 h-12 sm:h-14 font-bold uppercase tracking-wider text-sm sm:text-base hover:bg-slate-800 transition-colors group"
+            className="bg-slate-950 text-white inline-flex items-center justify-center gap-2 px-6 sm:px-7 h-12 sm:h-14 font-bold uppercase tracking-wider text-sm sm:text-base hover:bg-slate-800 transition-colors group shine-on-hover"
           >
             Apply Now
             <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
