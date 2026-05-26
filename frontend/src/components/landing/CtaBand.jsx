@@ -5,7 +5,7 @@ export default function CtaBand() {
   return (
     <section data-testid="cta-band" className="py-16 sm:py-24 lg:py-28 bg-yellow-400 relative overflow-hidden">
       <div className="absolute -bottom-20 -right-20 h-72 w-72 bg-slate-950/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-7 sm:gap-8">
+      <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-10 flex flex-col md:flex-row md:items-center justify-between gap-7 sm:gap-8">
         <div className="max-w-2xl">
           <div className="text-xs font-bold uppercase tracking-[0.2em] text-slate-900/70">
             Don't wait for next year
@@ -14,7 +14,7 @@ export default function CtaBand() {
             Your career starts the day you apply.
           </h2>
         </div>
-        <div className="flex flex-col sm:flex-row gap-3 w-full lg:w-auto">
+        <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto md:flex-shrink-0">
           <a
             href="#apply"
             data-testid="cta-band-apply"

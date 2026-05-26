@@ -22,7 +22,7 @@ export default function WhatsAppButton() {
     >
       <div className="flex items-center gap-3">
         <div
-          className={`hidden sm:block bg-white border border-slate-200 px-4 py-2.5 shadow-lg transition-all duration-300 ${
+          className={`hidden lg:block bg-white border border-slate-200 px-4 py-2.5 shadow-lg transition-all duration-300 ${
             hover ? "opacity-100 translate-x-0" : "opacity-0 translate-x-3 pointer-events-none"
           }`}
         >

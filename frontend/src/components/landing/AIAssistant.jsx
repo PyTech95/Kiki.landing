@@ -85,7 +85,7 @@ export default function AIAssistant() {
             <span className="absolute -top-1 -right-1 h-3 w-3 rounded-full bg-yellow-400 animate-ping" />
             <span className="absolute -top-1 -right-1 h-3 w-3 rounded-full bg-yellow-400" />
           </div>
-          <div className="hidden sm:block bg-white border border-slate-200 px-3.5 py-2 shadow-md">
+          <div className="hidden lg:block bg-white border border-slate-200 px-3.5 py-2 shadow-md">
             <div className="text-[10px] font-bold uppercase tracking-[0.18em] text-slate-500">
               Ask Kiki AI
             </div>

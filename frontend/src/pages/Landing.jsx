@@ -31,7 +31,7 @@ export default function Landing() {
   }, []);
 
   return (
-    <main data-testid="landing-page" className="bg-white text-slate-950 font-body pb-14 lg:pb-0">
+    <main data-testid="landing-page" className="bg-white text-slate-950 font-body pb-14 md:pb-0">
       <Navbar />
       <Hero />
       <StatsStrip />

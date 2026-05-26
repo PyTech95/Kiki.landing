@@ -113,9 +113,9 @@ export default function AdmissionForm() {
       <div className="absolute inset-0 grid-noise opacity-[0.07] pointer-events-none" />
       <div className="absolute -top-20 -left-20 h-72 w-72 bg-yellow-400/10 blur-3xl rounded-full" />
 
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 grid lg:grid-cols-12 gap-10 items-start">
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-10 items-start">
         {/* Left — context */}
-        <div className="lg:col-span-5">
+        <div className="md:col-span-5">
           <div className="text-xs font-bold uppercase tracking-[0.2em] text-yellow-400">
             Admissions Open · 2026
           </div>
@@ -150,7 +150,7 @@ export default function AdmissionForm() {
         </div>
 
         {/* Right — form */}
-        <div className="lg:col-span-7 bg-white text-slate-950 border border-slate-200 shadow-xl">
+        <div className="md:col-span-7 bg-white text-slate-950 border border-slate-200 shadow-xl w-full">
           {/* progress */}
           <div className="h-1.5 w-full bg-slate-200">
             <div

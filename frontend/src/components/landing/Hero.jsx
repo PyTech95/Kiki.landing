@@ -8,9 +8,9 @@ export default function Hero() {
       <div className="absolute inset-0 grid-noise opacity-60 pointer-events-none" />
       <div className="absolute top-32 -right-20 h-72 w-72 bg-yellow-400/20 blur-3xl rounded-full pointer-events-none" />
 
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-8 lg:gap-10 items-center">
         {/* Left content */}
-        <div className="lg:col-span-7 reveal-up">
+        <div className="md:col-span-7 reveal-up">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 border border-slate-900 bg-yellow-400 text-slate-950">
             <span className="relative flex h-2 w-2">
               <span className="absolute inline-flex h-full w-full rounded-full bg-slate-900 opacity-75 animate-ping"></span>
@@ -79,7 +79,7 @@ export default function Hero() {
         </div>
 
         {/* Right visual — Campus Tour Video */}
-        <div className="lg:col-span-5 relative reveal-up" style={{ animationDelay: "120ms" }}>
+        <div className="md:col-span-5 relative reveal-up" style={{ animationDelay: "120ms" }}>
           <HeroVideo />
         </div>
       </div>

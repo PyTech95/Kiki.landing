@@ -4,8 +4,8 @@ import { KIKI } from "@/data/kiki";
 export default function Footer() {
   return (
     <footer data-testid="site-footer" className="bg-slate-950 text-slate-300">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 py-16 grid lg:grid-cols-12 gap-10">
-        <div className="lg:col-span-5">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 py-12 sm:py-16 grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-10">
+        <div className="md:col-span-5">
           <div className="flex items-center gap-3">
             <img
               src="https://customer-assets.emergentagent.com/job_join-kiki/artifacts/4h36vc80_image.png"
@@ -33,7 +33,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="lg:col-span-3">
+        <div className="md:col-span-3">
           <div className="text-xs font-bold uppercase tracking-[0.2em] text-slate-500 mb-4">
             Programs
           </div>
@@ -46,7 +46,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        <div className="lg:col-span-4">
+        <div className="md:col-span-4">
           <div className="text-xs font-bold uppercase tracking-[0.2em] text-slate-500 mb-4">
             Get admission updates
           </div>
