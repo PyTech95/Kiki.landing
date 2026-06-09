@@ -4,8 +4,8 @@ export const KIKI = {
   phone: "+91 8800288994",
   phoneRaw: "+918800288994",
   whatsapp: "918800288994",
-  email: "admissions@kikicentre.com",
-  address: "Gurgaon, Delhi-NCR, India",
+  email: "info@kikicentre.com",
+  address: "1/47, Sector 76A, Gurugram, Delhi-NCR, India",
   partner: "German Chamber of Skilled Crafts (HWK), Koblenz, Germany",
 };
 
@@ -111,6 +111,10 @@ export const TESTIMONIALS = [
 
 export const FAQS = [
   {
+    q: "What are the placement stats?",
+    a: "We have mostly 100% placement record in India & abroad for students who pass the course and attend all interviews.",
+  },
+  {
     q: "Who can apply for the 3.5-year courses?",
     a: "Any student who has passed Class 10 or Class 12 (any stream) can apply. Selection is based on a simple aptitude check and interview.",
   },
@@ -124,7 +128,7 @@ export const FAQS = [
   },
   {
     q: "Where is the campus located?",
-    a: "Our 25,000 sq ft training centre is at Gurgaon, in the Delhi-NCR region.",
+    a: "Our 25,000 sq ft training centre is at 1/47, Sector 76A, Gurugram (Delhi-NCR region).",
   },
   {
     q: "Are scholarships available?",
