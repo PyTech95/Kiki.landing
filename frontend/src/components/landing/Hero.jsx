@@ -34,17 +34,18 @@ export default function Hero() {
           </h1>
 
           <p className="mt-5 max-w-xl text-base sm:text-lg text-slate-600 leading-relaxed">
-            German-certified 3.5-year diploma programs in Tool & Die Making,
-            Precision Machining and Mechatronics — designed with Indo-German
-            experts. <strong className="text-slate-900">Earn a stipend</strong> while you learn from Year 2.
+            HWK-Koblenz, Germany certified 3.5-year diploma programs in Tool & Die
+            Making, Precision Machining and Mechatronics — designed with Indo-German
+            experts. <strong className="text-slate-900">Work in industry & earn a stipend</strong>{" "}
+            while you learn from Year 2.
           </p>
 
           <ul className="mt-6 grid sm:grid-cols-2 gap-2.5 max-w-xl">
             {[
-              "German Chamber of Skilled Crafts certified",
+              "German Chamber of Skilled Crafts, Koblenz, Germany certified",
               "Earn While You Learn from Year 2",
               "Class 10 / 12 pass eligible (any stream)",
-              "Industry-ready in 3.5 years",
+              "World-class practical with machines from India, Japan, Germany, USA etc.",
             ].map((t) => (
               <li key={t} className="flex items-start gap-2 text-sm sm:text-[15px] text-slate-700">
                 <CheckCircle2 className="h-5 w-5 text-emerald-600 flex-shrink-0 mt-0.5" />
@@ -74,7 +75,7 @@ export default function Hero() {
 
           <div className="mt-8 flex items-center gap-3 text-xs text-slate-500">
             <Award className="h-4 w-4" />
-            <span>In association with HWK Koblenz, Germany · IMT Manesar Campus</span>
+            <span>In association with HWK Koblenz, Germany · Gurgaon Campus</span>
           </div>
         </div>
 

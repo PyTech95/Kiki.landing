@@ -11,7 +11,7 @@ export default function CoursesSection() {
               Long Term Courses · 3.5 Years
             </div>
             <h2 className="font-display mt-3 text-3xl sm:text-5xl lg:text-6xl font-black tracking-tighter text-slate-950 leading-[1.02] sm:leading-[0.95] text-balance">
-              Three German-certified
+              Three HWK-Koblenz certified
               <br />
               paths to your career.
             </h2>

@@ -65,7 +65,7 @@ export default function HeroVideo() {
                 Watch · Campus Tour
               </div>
               <div className="font-display text-xl sm:text-2xl lg:text-3xl font-bold text-white leading-tight tracking-tight">
-                Step inside our 55,000 sq ft<br className="hidden sm:block" />
+                Step inside our 25,000 sq ft<br className="hidden sm:block" />
                 <span className="sm:hidden"> </span>training centre.
               </div>
             </div>

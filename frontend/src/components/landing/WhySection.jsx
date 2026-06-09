@@ -13,7 +13,7 @@ const REASONS = [
   },
   {
     icon: Building2,
-    title: "55,000 sq ft Campus",
+    title: "25,000 sq ft Campus",
     desc: "Well-equipped classrooms, workshops, simulators and industrial machinery.",
   },
   {

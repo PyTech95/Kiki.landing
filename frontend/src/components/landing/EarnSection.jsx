@@ -4,12 +4,12 @@ const POINTS = [
   {
     icon: GraduationCap,
     title: "Year 1 — Foundation",
-    desc: "Theory + intensive workshop training at our 55,000 sq ft IMT Manesar campus.",
+    desc: "Theory + intensive workshop training at our 25,000 sq ft Gurgaon campus.",
   },
   {
     icon: Factory,
     title: "Year 2 onwards — On-Job Training",
-    desc: "Train inside India's top manufacturing companies (Maruti, Honda, Mitsubishi).",
+    desc: "Train inside India's top automobile & manufacturing companies (Maruti, Honda, Mitsubishi, Boston Scientific, Subros, IFB etc.).",
   },
   {
     icon: Banknote,
@@ -18,8 +18,8 @@ const POINTS = [
   },
   {
     icon: Award,
-    title: "German-certified Diploma",
-    desc: "Internationally recognised qualification on completion of 3.5 years.",
+    title: "HWK-Koblenz Certified Diploma",
+    desc: "Placement opportunity in India & abroad after completion of 3.5 years.",
   },
 ];
 
@@ -40,9 +40,9 @@ export default function EarnSection() {
               </span>
             </h2>
             <p className="mt-4 sm:mt-5 text-base sm:text-lg text-slate-900/80 leading-relaxed max-w-md">
-              Modelled after Germany's famous "Berufsschule" dual-training system —
+              Modelled after Germany's famous "Berufsschule" work-study system —
               one of the most successful in the world. Students don't just learn
-              skills, they earn money while building a real career.
+              theoretical & practical skills, they also earn money while building a real career.
             </p>
             <a
               href="#apply"

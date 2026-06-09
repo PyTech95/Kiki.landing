@@ -5,7 +5,7 @@ export const KIKI = {
   phoneRaw: "+918800288994",
   whatsapp: "918800288994",
   email: "admissions@kikicentre.com",
-  address: "IMT Manesar, Gurgaon, Delhi-NCR, India",
+  address: "Gurgaon, Delhi-NCR, India",
   partner: "German Chamber of Skilled Crafts (HWK), Koblenz, Germany",
 };
 
@@ -82,10 +82,10 @@ export const PARTNERS = [
 ];
 
 export const STATS = [
-  { value: "55,000", suffix: "sq ft", label: "Training Campus" },
+  { value: "25,000", suffix: "sq ft", label: "Training Campus" },
   { value: "3.5", suffix: "years", label: "Diploma Duration" },
-  { value: "15+", suffix: "", label: "Industry Partners" },
-  { value: "100%", suffix: "", label: "Hands-on Practical" },
+  { value: "India", suffix: "& Abroad", label: "Placement Reach" },
+  { value: "70%", suffix: "", label: "Hands-on Practical" },
 ];
 
 export const TESTIMONIALS = [
@@ -124,7 +124,7 @@ export const FAQS = [
   },
   {
     q: "Where is the campus located?",
-    a: "Our 55,000 sq ft training centre is at IMT Manesar, Gurgaon, in the Delhi-NCR region.",
+    a: "Our 25,000 sq ft training centre is at Gurgaon, in the Delhi-NCR region.",
   },
   {
     q: "Are scholarships available?",
