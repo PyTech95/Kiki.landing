@@ -69,7 +69,7 @@ export default function CoursesSection() {
 
                 <div className="mt-6 pt-5 border-t border-slate-200 flex items-center justify-between">
                   <span className="text-[11px] text-slate-500 uppercase tracking-wider">
-                    Cert: HWK Koblenz
+                    HWK Koblenz + Indian Certified
                   </span>
                   <a
                     href="#apply"

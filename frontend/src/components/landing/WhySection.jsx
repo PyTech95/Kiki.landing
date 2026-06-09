@@ -8,8 +8,8 @@ const REASONS = [
   },
   {
     icon: ShieldCheck,
-    title: "Certified by HWK Koblenz",
-    desc: "Recognised qualification from the German Chamber of Skilled Crafts.",
+    title: "Dual Certification",
+    desc: "Certificate from the German Chamber of Skilled Crafts, Koblenz, Germany + Indian skill certificate from SSC, MSDE, Govt. of India.",
   },
   {
     icon: Building2,
@@ -47,8 +47,8 @@ export default function WhySection() {
           </h2>
           <p className="mt-5 text-slate-600 text-base sm:text-lg leading-relaxed">
             We make the people who will make in India. Supported by a World Bank
-            reflows programme, the German Chamber of Skilled Crafts and leading
-            Indian industry partners.
+            reflows programme, the German Chamber of Skilled Crafts, Koblenz,
+            Germany and leading Indian industry partners.
           </p>
         </div>
 
