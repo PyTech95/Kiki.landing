@@ -24,7 +24,7 @@ const REASONS = [
   {
     icon: BookOpen,
     title: "Theory + Practical",
-    desc: "Strong fundamentals paired with practical hands-on workshop time every day.",
+    desc: "Strong fundamentals paired with practical hands-on workshop time every day. Machinery from Japan, India, Germany, USA etc.",
   },
   {
     icon: Users,

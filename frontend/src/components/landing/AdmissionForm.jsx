@@ -49,6 +49,7 @@ const initialState = {
   city: "",
   state: "",
   year_of_passing: "",
+  interested_in_streams: "",
   message: "",
   referral_source: "",
 };
@@ -70,13 +71,14 @@ export default function AdmissionForm() {
     if (step === 1) {
       if (!form.full_name || form.full_name.trim().length < 2)
         e.full_name = "Please enter your full name.";
-      if (!form.email || !/^\S+@\S+\.\S+$/.test(form.email))
-        e.email = "Please enter a valid email.";
       if (!form.phone || form.phone.replace(/\D/g, "").length < 7)
         e.phone = "Please enter a valid phone number.";
-    } else if (step === 2) {
       if (!form.qualification) e.qualification = "Select your qualification.";
+    } else if (step === 2) {
       if (!form.course) e.course = "Select a course of interest.";
+    } else if (step === 3) {
+      if (form.email && !/^\S+@\S+\.\S+$/.test(form.email))
+        e.email = "Please enter a valid email or leave blank.";
     }
     setErrors(e);
     return Object.keys(e).length === 0;
@@ -91,7 +93,9 @@ export default function AdmissionForm() {
     if (!validateStep()) return;
     setSubmitting(true);
     try {
-      await axios.post(`${API}/admission/apply`, form);
+      // Send empty email as null so backend accepts it as optional
+      const payload = { ...form, email: form.email || null };
+      await axios.post(`${API}/admission/apply`, payload);
       setDone(true);
       toast.success("Application submitted! Our counsellor will contact you within 24 hours.");
     } catch (err) {
@@ -239,17 +243,27 @@ export default function AdmissionForm() {
                         className="h-12 rounded-none border-slate-300 focus-visible:ring-slate-900"
                       />
                     </Field>
-                    <Field label="Email *" error={errors.email} className="sm:col-span-2">
-                      <Input
-                        data-testid="form-email"
-                        type="email"
-                        value={form.email}
-                        onChange={(e) => setField("email", e.target.value)}
-                        placeholder="you@example.com"
-                        className="h-12 rounded-none border-slate-300 focus-visible:ring-slate-900"
-                      />
+                    <Field label="Highest Qualification *" error={errors.qualification} className="sm:col-span-2">
+                      <Select
+                        value={form.qualification}
+                        onValueChange={(v) => setField("qualification", v)}
+                      >
+                        <SelectTrigger
+                          data-testid="form-qualification"
+                          className="h-12 rounded-none border-slate-300 focus:ring-slate-900"
+                        >
+                          <SelectValue placeholder="10 / 12 / ITI / Diploma / Degree" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          {QUALIFICATIONS.map((q) => (
+                            <SelectItem key={q} value={q}>
+                              {q}
+                            </SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
                     </Field>
-                    <Field label="City" className="sm:col-span-1">
+                    <Field label="City">
                       <Input
                         data-testid="form-city"
                         value={form.city}
@@ -267,31 +281,30 @@ export default function AdmissionForm() {
                         className="h-12 rounded-none border-slate-300 focus-visible:ring-slate-900"
                       />
                     </Field>
+                    <Field label="Interested in Mechanical / Electrical / Electronics / Automation / Robotics?" className="sm:col-span-2">
+                      <div className="flex gap-3">
+                        {["Yes", "No"].map((opt) => (
+                          <button
+                            key={opt}
+                            type="button"
+                            data-testid={`form-interest-${opt.toLowerCase()}`}
+                            onClick={() => setField("interested_in_streams", opt)}
+                            className={`flex-1 h-12 border-2 font-bold uppercase tracking-wider text-sm transition-colors ${
+                              form.interested_in_streams === opt
+                                ? "bg-slate-950 text-white border-slate-950"
+                                : "bg-white text-slate-700 border-slate-300 hover:border-slate-900"
+                            }`}
+                          >
+                            {opt}
+                          </button>
+                        ))}
+                      </div>
+                    </Field>
                   </div>
                 )}
 
                 {step === 2 && (
                   <div className="grid sm:grid-cols-2 gap-4">
-                    <Field label="Your Qualification *" error={errors.qualification}>
-                      <Select
-                        value={form.qualification}
-                        onValueChange={(v) => setField("qualification", v)}
-                      >
-                        <SelectTrigger
-                          data-testid="form-qualification"
-                          className="h-12 rounded-none border-slate-300 focus:ring-slate-900"
-                        >
-                          <SelectValue placeholder="Select qualification" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          {QUALIFICATIONS.map((q) => (
-                            <SelectItem key={q} value={q}>
-                              {q}
-                            </SelectItem>
-                          ))}
-                        </SelectContent>
-                      </Select>
-                    </Field>
                     <Field label="Year of Passing">
                       <Input
                         data-testid="form-year"
@@ -326,6 +339,16 @@ export default function AdmissionForm() {
 
                 {step === 3 && (
                   <div className="grid gap-4">
+                    <Field label="Email (optional)" error={errors.email}>
+                      <Input
+                        data-testid="form-email"
+                        type="email"
+                        value={form.email}
+                        onChange={(e) => setField("email", e.target.value)}
+                        placeholder="you@example.com"
+                        className="h-12 rounded-none border-slate-300 focus-visible:ring-slate-900"
+                      />
+                    </Field>
                     <Field label="How did you hear about us?">
                       <Select
                         value={form.referral_source}

@@ -44,13 +44,14 @@ class AdmissionApplication(BaseModel):
     model_config = ConfigDict(extra="ignore")
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     full_name: str
-    email: EmailStr
+    email: Optional[EmailStr] = None
     phone: str
     qualification: str  # "10th" | "12th" | "ITI" | "Diploma" | "Degree"
-    course: str  # "Tool & Die Making" | "Precision Machining Technology" | "Mechatronics"
+    course: Optional[str] = None
     city: Optional[str] = None
     state: Optional[str] = None
     year_of_passing: Optional[str] = None
+    interested_in_streams: Optional[str] = None  # "Yes" / "No"
     message: Optional[str] = None
     referral_source: Optional[str] = None
     created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
@@ -58,13 +59,14 @@ class AdmissionApplication(BaseModel):
 
 class AdmissionApplicationCreate(BaseModel):
     full_name: str = Field(min_length=2, max_length=100)
-    email: EmailStr
+    email: Optional[EmailStr] = None
     phone: str = Field(min_length=7, max_length=20)
     qualification: str
-    course: str
+    course: Optional[str] = None
     city: Optional[str] = None
     state: Optional[str] = None
     year_of_passing: Optional[str] = None
+    interested_in_streams: Optional[str] = None
     message: Optional[str] = None
     referral_source: Optional[str] = None
 

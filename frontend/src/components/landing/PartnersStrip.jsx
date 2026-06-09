@@ -1,24 +1,34 @@
 const PARTNERS = [
   {
+    type: "image",
     name: "Hi-Lex",
     url: "https://customer-assets.emergentagent.com/job_join-kiki/artifacts/hgo71pph_image.png",
   },
   {
+    type: "image",
     name: "Subros",
     url: "https://customer-assets.emergentagent.com/job_join-kiki/artifacts/ekgoppv5_image.png",
   },
   {
+    type: "image",
     name: "IFB",
     url: "https://customer-assets.emergentagent.com/job_join-kiki/artifacts/wmcorte3_image.png",
   },
   {
+    type: "image",
     name: "Nagata",
     url: "https://customer-assets.emergentagent.com/job_join-kiki/artifacts/sxfu5imk_image.png",
   },
   {
+    type: "image",
     name: "AIS",
     url: "https://customer-assets.emergentagent.com/job_join-kiki/artifacts/jumf6tnf_image.png",
   },
+  { type: "text", name: "Boston Scientific" },
+  { type: "text", name: "Rico" },
+  { type: "text", name: "Roop" },
+  { type: "text", name: "Ensto" },
+  { type: "text", name: "Spinks" },
 ];
 
 export default function PartnersStrip() {
@@ -40,20 +50,28 @@ export default function PartnersStrip() {
       </div>
 
       <div className="overflow-hidden marquee-mask">
-        <div className="ticker-reverse flex items-center gap-12 sm:gap-16 whitespace-nowrap py-4">
+        <div className="ticker-reverse flex items-center gap-10 sm:gap-14 whitespace-nowrap py-4">
           {loop.map((p, i) => (
             <div
               key={`${p.name}-${i}`}
-              data-testid={`partner-logo-${p.name.toLowerCase()}-${i}`}
-              className="flex-shrink-0 h-16 sm:h-20 w-32 sm:w-44 grid place-items-center grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300"
+              data-testid={`partner-${p.name.toLowerCase().replace(/\s+/g, "-")}-${i}`}
+              className="flex-shrink-0 h-16 sm:h-20 grid place-items-center px-2"
               title={p.name}
             >
-              <img
-                src={p.url}
-                alt={`${p.name} logo`}
-                className="max-h-full max-w-full object-contain"
-                loading="lazy"
-              />
+              {p.type === "image" ? (
+                <div className="w-32 sm:w-44 h-full grid place-items-center grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300">
+                  <img
+                    src={p.url}
+                    alt={`${p.name} logo`}
+                    className="max-h-full max-w-full object-contain"
+                    loading="lazy"
+                  />
+                </div>
+              ) : (
+                <div className="font-display text-2xl sm:text-3xl font-black uppercase tracking-tight text-slate-300 hover:text-slate-950 transition-colors px-2">
+                  {p.name}
+                </div>
+              )}
             </div>
           ))}
         </div>
