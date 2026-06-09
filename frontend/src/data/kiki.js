@@ -116,11 +116,11 @@ export const FAQS = [
   },
   {
     q: "What is 'Earn While You Learn'?",
-    a: "From the second year onwards, students undergo industrial training with our partner companies (Maruti Suzuki, Honda, Mitsubishi, etc.) and receive a monthly stipend / training allowance.",
+    a: "From the second year onwards, students undergo industrial training with our partner companies and receive a monthly stipend / training allowance.",
   },
   {
     q: "Is the certification valid abroad?",
-    a: "Yes. Long-term courses are certified by the German Chamber of Skilled Crafts (HWK), Koblenz, Germany — an internationally recognised qualification.",
+    a: "Yes. Long-term courses are certified by the German Chamber of Skilled Crafts (HWK), Koblenz, Germany as well as Indian Skill Certificate.",
   },
   {
     q: "Where is the campus located?",
