@@ -25,7 +25,7 @@ export const COURSES = [
       "World-class practical training & exposure",
     ],
     image:
-      "https://images.unsplash.com/photo-1717386255773-1e3037c81788?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NjZ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBlbmdpbmVlcmluZyUyMHdvcmtzaG9wJTIwdG9vbHMlMjBtYWNoaW5lcnl8ZW58MHx8fHwxNzc5MTgzOTMwfDA&ixlib=rb-4.1.0&q=85",
+      "https://customer-assets.emergentagent.com/job_join-kiki/artifacts/j6mg1r7g_079%20%281%29.jpg",
   },
   {
     id: "precision-machining",
