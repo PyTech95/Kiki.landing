@@ -3,7 +3,7 @@ import { ArrowUpRight, Clock, GraduationCap } from "lucide-react";
 
 export default function CoursesSection() {
   return (
-    <section id="courses" data-testid="courses-section" className="py-16 sm:py-24 lg:py-28 bg-white">
+    <section id="courses" data-testid="courses-section" aria-label="Long-term diploma courses" className="py-16 sm:py-24 lg:py-28 bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-12">
           <div>
@@ -30,18 +30,21 @@ export default function CoursesSection() {
               className="group border border-slate-900 bg-white flex flex-col card-lift hover:border-slate-950"
             >
               <div className="relative aspect-[4/3] overflow-hidden bg-slate-100 border-b border-slate-900">
-                <img
-                  src={c.image}
-                  alt={c.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute top-3 left-3 bg-yellow-400 text-slate-950 px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.16em]">
-                  {c.stream}
-                </div>
-                <div className="absolute top-3 right-3 bg-white/95 text-slate-950 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider">
-                  0{i + 1}
-                </div>
+              <img
+                src={c.image}
+                alt={`${c.title} — ${c.subtitle} course at Kiki Centre for Technology`}
+                width="800"
+                height="600"
+                loading="lazy"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute top-3 left-3 bg-yellow-400 text-slate-950 px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.16em]">
+                {c.stream}
               </div>
+              <div className="absolute top-3 right-3 bg-white/95 text-slate-950 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider">
+                0{i + 1}
+              </div>
+            </div>
 
               <div className="p-6 flex flex-col flex-1">
                 <h3 className="font-display text-2xl font-bold text-slate-950 tracking-tight">

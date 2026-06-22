@@ -17,7 +17,7 @@ export default function HeroVideo() {
 
       <div
         data-testid="hero-video-frame"
-        className="relative aspect-video sm:aspect-[4/5] overflow-hidden bg-slate-950 border-2 border-slate-950 shadow-2xl"
+        className="relative aspect-video sm:aspect-[4/5] overflow-hidden bg-slate-950 border-2 border-slate-950 shadow-2xl rounded-sm"
       >
         {active ? (
           <iframe

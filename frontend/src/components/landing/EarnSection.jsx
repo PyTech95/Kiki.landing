@@ -25,7 +25,7 @@ const POINTS = [
 
 export default function EarnSection() {
   return (
-    <section id="earn" data-testid="earn-section" className="py-16 sm:py-24 lg:py-28 bg-yellow-400 relative overflow-hidden grain">
+    <section id="earn" data-testid="earn-section" aria-label="Earn while you learn — work-study program" className="py-16 sm:py-24 lg:py-28 bg-yellow-400 relative overflow-hidden grain">
       <div className="absolute -top-24 -right-24 h-72 w-72 bg-slate-950/10 rounded-full blur-3xl" />
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-10 items-start">

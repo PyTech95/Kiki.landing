@@ -35,7 +35,7 @@ const REASONS = [
 
 export default function WhySection() {
   return (
-    <section id="why" data-testid="why-section" className="py-16 sm:py-24 lg:py-28 bg-slate-50 border-y border-slate-200">
+    <section id="why" data-testid="why-section" aria-label="Why choose Kiki Centre" className="py-16 sm:py-24 lg:py-28 bg-slate-50 border-y border-slate-200">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
         <div className="max-w-3xl">
           <div className="text-xs font-bold uppercase tracking-[0.2em] text-sky-700">

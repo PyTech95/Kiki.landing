@@ -8,7 +8,7 @@ import {
 
 export default function FaqSection() {
   return (
-    <section id="faq" data-testid="faq-section" className="py-16 sm:py-24 lg:py-28 bg-slate-50 border-y border-slate-200">
+    <section id="faq" data-testid="faq-section" aria-label="Frequently asked questions about admissions" className="py-16 sm:py-24 lg:py-28 bg-slate-50 border-y border-slate-200">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-10">
         <div className="text-center">
           <div className="text-xs font-bold uppercase tracking-[0.2em] text-sky-700">
