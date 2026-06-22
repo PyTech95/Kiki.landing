@@ -59,7 +59,7 @@ export const COURSES = [
       "High-demand industry skill set",
     ],
     image:
-      "https://images.pexels.com/photos/5027485/pexels-photo-5027485.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "https://customer-assets.emergentagent.com/job_join-kiki/artifacts/1f83rvoq_IMG_20160717_141358.jpg",
   },
 ];
 
