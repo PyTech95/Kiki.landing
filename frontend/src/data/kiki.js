@@ -42,7 +42,7 @@ export const COURSES = [
       "Direct placement support",
     ],
     image:
-      "https://images.unsplash.com/photo-1666634157070-6fd830fb5672?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwxfHxjbmMlMjBtYWNoaW5lJTIwbWFudWZhY3R1cmluZyUyMHByZWNpc2lvbnxlbnwwfHx8fDE3NzkxODM5MzB8MA&ixlib=rb-4.1.0&q=85",
+      "https://customer-assets.emergentagent.com/job_join-kiki/artifacts/q0kg32kb_2016_Feb_kiki_058.jpg",
   },
   {
     id: "mechatronics",
