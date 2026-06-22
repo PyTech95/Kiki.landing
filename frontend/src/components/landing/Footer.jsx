@@ -30,6 +30,10 @@ export default function Footer() {
               <Mail className="h-4 w-4 mt-0.5 text-yellow-400 flex-shrink-0" />
               <span>{KIKI.email}</span>
             </a>
+            <a href="mailto:manjee@gits.digital" className="flex items-start gap-2.5 text-sm hover:text-yellow-400 transition-colors">
+              <Mail className="h-4 w-4 mt-0.5 text-yellow-400 flex-shrink-0" />
+              <span>manjee@gits.digital</span>
+            </a>
           </div>
         </div>
 

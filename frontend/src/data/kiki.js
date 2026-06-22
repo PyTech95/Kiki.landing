@@ -5,7 +5,7 @@ export const KIKI = {
   phoneRaw: "+918800288994",
   whatsapp: "918800288994",
   email: "info@kikicentre.com",
-  address: "1/47, Sector 76A, Gurugram, Delhi-NCR, India",
+  address: "1/47, Sector 75A, Gurugram, Delhi-NCR, India",
   partner: "German Chamber of Skilled Crafts (HWK), Koblenz, Germany",
 };
 
@@ -124,11 +124,11 @@ export const FAQS = [
   },
   {
     q: "Is the certification valid abroad?",
-    a: "Yes. Long-term courses are certified by the German Chamber of Skilled Crafts (HWK), Koblenz, Germany as well as Indian Skill Certificate.",
+    a: "Yes. Long-term courses are certified by the German Chamber of Skilled Crafts (HWK), Koblenz, Germany as well as Indian Skill Certificate. Several of our students are working abroad through campus placement after the course.",
   },
   {
     q: "Where is the campus located?",
-    a: "Our 25,000 sq ft training centre is at 1/47, Sector 76A, Gurugram (Delhi-NCR region).",
+    a: "Our 25,000 sq ft training centre is at 1/47, Sector 75A, Gurugram (Delhi-NCR region).",
   },
   {
     q: "Are scholarships available?",

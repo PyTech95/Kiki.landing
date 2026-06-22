@@ -9,7 +9,7 @@ const POINTS = [
   {
     icon: Factory,
     title: "Year 2 onwards — On-Job Training",
-    desc: "Train inside India's top automobile & manufacturing companies (Maruti, Honda, Mitsubishi, Boston Scientific, Subros, IFB etc.).",
+    desc: "Train inside MNC companies from America, India, Germany, Japan & Switzerland such as Boston Scientific, IFB, Subros, Ensto, Giesecke + Devrient, Bucher etc.",
   },
   {
     icon: Banknote,
